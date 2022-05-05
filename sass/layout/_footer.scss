@@ -1,0 +1,77 @@
+.footer {
+  padding: 60px 0;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  background-color: $dark-bgc;
+
+  &__left-side {
+    margin-right: 70px;
+  }
+
+  &__center {
+    margin-right: 78px;
+  }
+
+  &__third-header {
+    margin-bottom: 20px;
+    color: $third-colorFont;
+  }
+}
+
+.address {
+  margin-top: 20px;
+}
+
+.address-list {
+  &__item:nth-child(2) {
+    margin: 9px 0;
+  }
+
+  &__link {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $main-color;
+    }
+
+    &--white {
+      color: $third-colorFont;
+      transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+
+//  Page footer - right side - newsletter
+.footer-form__newsletter {
+  display: flex;
+}
+
+.newsletter__email {
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+  padding: 15px 16px;
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: $dark-bgc;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &,
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:focus {
+    border-color: $main-color;
+  }
+}

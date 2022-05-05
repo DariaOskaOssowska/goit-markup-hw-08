@@ -1,0 +1,7 @@
+.section {
+  padding-top: 94px;
+
+  &:not(.hero-down-side) {
+    padding-bottom: 94px;
+  }
+}

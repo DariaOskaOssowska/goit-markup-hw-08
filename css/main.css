@@ -47,40 +47,27 @@ img {
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
   align-items: center;
 }
 
-.header .container {
-  display: flex;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  align-items: center;
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
-.hero-up-side .container {
-  padding-top: 200px;
-  padding-bottom: 200px;
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
 }
 
-.hero-up-side .container,
-.about .container,
-.team .container,
-.customers .container {
-  display: flex;
-  flex-direction: column;
-}
-
-.portfolio-filter .container {
-  display: flex;
-  justify-content: center;
-}
-
-.footer .container {
-  display: flex;
-  align-items: baseline;
+@media screen and (min-width: 480px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section {

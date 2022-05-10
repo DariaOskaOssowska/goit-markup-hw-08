@@ -703,17 +703,25 @@ img {
 
 .customers-list {
   display: flex;
-  justify-content: center;
-  margin: auto;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
 .customers-list__item {
-  display: flex;
-  justify-content: center;
+  flex-basis: calc((100% - 30px * 2) / 2);
+  margin: 15px;
 }
 
-.customers-list__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .customers-list__item {
+    flex-basis: calc((100% - 30px * 3) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customers-list__item {
+    flex-basis: calc((100% - 30px * 6) / 6);
+  }
 }
 
 .customers-list__link {
@@ -721,7 +729,7 @@ img {
   justify-content: center;
   align-items: center;
   height: 92px;
-  width: 170px;
+  width: 100%;
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;

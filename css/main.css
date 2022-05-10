@@ -64,7 +64,7 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
   }
@@ -114,17 +114,6 @@ img {
 
 .logo--dark-theme {
   color: #ffffff;
-}
-
-.hero-main-header {
-  padding-bottom: 30px;
-  max-width: 696px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.364;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
 }
 
 .second-header {
@@ -482,6 +471,12 @@ img {
 
 /* =======   HERO up side ======= */
 .hero-up-side {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 400px;
   background-color: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/mobile/bg_hero-mobile.jpg);
   background-repeat: no-repeat;
@@ -496,9 +491,60 @@ img {
   }
 }
 
-/* ====== END HERO up side ====== */
-/* =======   HERO up side ======= */
-/* ====== END HERO up side ====== */
+@media screen and (min-width: 768px) {
+  .hero-up-side {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/tablet/bg_hero-tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-up-side {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/tablet/bg_hero-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-up-side {
+    height: 600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/desktop/bg_hero-desktop.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-up-side {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/desktop/bg_hero-desktop@2x.jpg);
+  }
+}
+
+.hero-up-side__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-up-side__title {
+  padding-bottom: 30px;
+  max-width: 365px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.615;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-up-side__title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.364;
+  }
+}
+
+/*
+}
+
+ ====== END HERO up side ====== */
 /* ======   HERO down side ====== */
 .hero-list {
   display: flex;

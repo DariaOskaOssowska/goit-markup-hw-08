@@ -72,6 +72,9 @@ img {
 
 .section {
   padding-top: 60px;
+}
+
+.section:not(.hero-down-side) {
   padding-bottom: 60px;
 }
 
@@ -597,6 +600,12 @@ img {
   .hero-list__item {
     max-width: 270px;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 1199.9px) {
+  .about {
+    display: none;
   }
 }
 

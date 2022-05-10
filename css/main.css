@@ -483,12 +483,21 @@ img {
 /* =======   HERO up side ======= */
 .hero-up-side {
   background-color: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/bg_hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/mobile/bg_hero-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   color: #ffffff;
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-up-side {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/mobile/bg_hero-mobile@2x.jpg);
+  }
+}
+
+/* ====== END HERO up side ====== */
+/* =======   HERO up side ======= */
 /* ====== END HERO up side ====== */
 /* ======   HERO down side ====== */
 .hero-list {

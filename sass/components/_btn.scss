@@ -47,8 +47,14 @@
 // Newsletter button
 .newsletter__btn {
   display: flex;
+  margin: auto;
+  justify-content: center;
   padding: 10px 24px 10px 42px;
   outline: none;
+  
+  @media screen and (max-width: 1199.9px) {
+    margin-top: 20px;
+  }
 }
 
 .newsletter__btn-icon {

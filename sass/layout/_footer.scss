@@ -1,6 +1,18 @@
 .footer {
-   padding: 60px 0;
+  // padding: 60px 0;
   background-color: $dark-bgc;
+
+  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+    &__left-side {
+      margin-right: 144px;
+      // margin-left: 76px;
+      // margin: 60px 144px 60px 76px;
+      padding: 60px 0;
+      text-align: center;
+    }
+  //   &__center {
+ 
+  // }
 
   &__center {
     margin-bottom: 60px;
@@ -12,12 +24,12 @@
     @media screen and (max-width: 767.9px) {
       flex-direction: column;
       align-items: center;
+      padding: 60px 0;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199.9px) {
       display: flex;
-    text-align: center;
-    justify-content: space-around;
+      flex-wrap: wrap;
     }
   }
 
@@ -27,9 +39,10 @@
     color: $third-colorFont;
   }
 }
+}
 
 .address {
-   margin-top: 20px;
+  margin-top: 20px;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
@@ -38,9 +51,21 @@
     margin-bottom: 60px;
     text-align: center;
   }
+
+  @media screen and (max-width: 1199.9px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .address-list {
+  @media screen and (max-width: 1199.9px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__item:nth-child(2) {
     margin: 8px 0;
   }
@@ -73,7 +98,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-basis: calc((100% - 30px * 2) / 2);
+    margin-bottom: 60px;
 
     &:last-child {
       flex-basis: 100%;

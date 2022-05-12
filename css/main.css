@@ -72,6 +72,18 @@ img {
   }
 }
 
+.header .container {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  align-items: center;
+}
+
+.portfolio-filter .container {
+  display: flex;
+  justify-content: center;
+}
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -759,37 +771,44 @@ img {
 }
 
 .footer {
-  padding: 60px 0;
   background-color: #2f303a;
 }
 
-.footer__center {
-  margin-bottom: 60px;
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+  .footer__left-side {
+    margin-right: 144px;
+    padding: 60px 0;
+    text-align: center;
+  }
+  .footer__center {
+    margin-bottom: 60px;
+  }
+  .footer__container {
+    display: flex;
+  }
 }
 
-.footer__container {
-  display: flex;
-}
-
-@media screen and (max-width: 767.9px) {
+@media screen and (min-width: 768px) and (max-width: 1199.9px) and (max-width: 767.9px) {
   .footer__container {
     flex-direction: column;
     align-items: center;
+    padding: 60px 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.9px) and (min-width: 768px) and (max-width: 1199.9px) {
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.9px) {
-  .footer__container {
-    display: flex;
+  .footer__third-header {
+    margin-bottom: 20px;
     text-align: center;
-    justify-content: space-around;
+    color: #ffffff;
   }
-}
-
-.footer__third-header {
-  margin-bottom: 20px;
-  text-align: center;
-  color: #ffffff;
 }
 
 .address {
@@ -803,6 +822,22 @@ img {
   .address {
     margin-bottom: 60px;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 1199.9px) {
+  .address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1199.9px) {
+  .address-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -835,7 +870,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-basis: calc((100% - 30px * 2) / 2);
+    margin-bottom: 60px;
   }
   .footer__newsletter:last-child {
     flex-basis: 100%;

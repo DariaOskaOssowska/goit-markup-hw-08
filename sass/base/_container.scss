@@ -14,41 +14,34 @@
   @media screen and (min-width: 1200px) {
     width: 1200px;
   }
+
+  .header & {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    align-items: center;
+  }
+
+  // .hero-up-side & {
+  //   padding-top: 200px;
+  //   padding-bottom: 200px;
+  // }
+
+  // .hero-up-side &,
+  // .about &,
+  // .team &,
+  // .customers & {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
+
+  .portfolio-filter & {
+    display: flex;
+    justify-content: center;
+  }
+
+  // .footer & {
+  //   display: flex;
+  //   align-items: baseline;
+  // }
 }
-
-// .container {
-//   width: 1200px;
-//   margin: 0 auto;
-//   padding: 0 15px;
-//   align-items: center;
-
-//   .header & {
-//     display: flex;
-//     padding-top: 24px;
-//     padding-bottom: 25px;
-//     align-items: center;
-//   }
-
-//   .hero-up-side & {
-//     padding-top: 200px;
-//     padding-bottom: 200px;
-//   }
-
-//   .hero-up-side &,
-//   .about &,
-//   .team &,
-//   .customers & {
-//     display: flex;
-//     flex-direction: column;
-//   }
-
-//   .portfolio-filter & {
-//     display: flex;
-//     justify-content: center;
-//   }
-
-//   .footer & {
-//     display: flex;
-//     align-items: baseline;
-//   }
-// }

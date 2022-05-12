@@ -1,5 +1,10 @@
 .btn {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 41px;
   width: 200px;
+  height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -46,10 +51,8 @@
 
 // Newsletter button
 .newsletter__btn {
-  display: flex;
-  margin: auto;
-  justify-content: center;
-  padding: 10px 24px 10px 42px;
+  position: relative;
+  padding-right: 76px;
   outline: none;
   
   @media screen and (max-width: 1199.9px) {

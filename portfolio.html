@@ -19,7 +19,7 @@
 <body>
     <!-- HEADER -->
     <header class="header">
-        <div class="container">
+        <div class="header-container container">
             <!-- Main navigation -->
             <nav class="navigation">
                 <a class="logo link" href="./index.html"><span class="logo--accent">Web</span><span
@@ -45,11 +45,56 @@
                     <a class="header-address-list__link header-address-list__link-phone link" href="tel:+48111111111">
                         <svg class="header-address-list__icon" width="10" height="16">
                             <use href="./images/svg/icons.svg#icon-smartphone"></use>
-                        </svg>+48
-                        111
-                        111
-                        111</a>
+                        </svg>+48 111 111 111</a>
                 </li>
+            </ul>
+        </div>
+        <button type="button" class="mobile-menu-burger" data-menu-open>
+            <svg class="mobile-menu-btn__icon mobile-menu-btn__icon-open" width="40" height="40">
+                <use class="mobile-menu-btn__icon" href="./images/svg/icons.svg#icon-menu-open">
+                </use>
+            </svg>
+        </button>
+        <div class="mobile-menu" data-menu>
+            <button type="button" class="mobile-menu-close" data-menu-close>
+                <svg class="mobile-menu-btn__icon mobile-menu-btn__icon-close" width="40" height="40">
+                    <use class="mobile-menu-btn__icon" href="./images/svg/icons.svg#icon-menu-close"></use>
+                </svg>
+            </button>
+
+            <div class="mobile-navigation">
+                <ul class="mobile-navigation-list list">
+                    <li class="mobile-navigation-list__item"><a class="mobile-navigation-list__link link"
+                            href="./index.html">Agencja</a></li>
+                    <li class="mobile-navigation-list__item"><a class="mobile-navigation-list__link link active"
+                            href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="mobile-navigation-list__item"><a class="mobile-navigation-list__link link"
+                            href="#">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="mobile-addres-list list">
+                <li class="mobile-addres-list__item">
+                    <a class="mobile-addres-list__link mobile-addres-list__link-phone link" href="tel:+48111111111">+48
+                        111 111 111</a>
+                <li class="mobile-addres-list__item">
+                    <a class="mobile-addres-list__link mobile-addres-list__link-mail link"
+                        href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                </li>
+            </ul>
+
+            <ul class="header-social-list list">
+                <li class="header-social-list__item"><a class="header-social-list__link link" href="#">Instagram</a>
+                </li>
+                <li class="header-social-list__item"><a class="header-social-list__link link" href="#" target="_blank"
+                        rel="noopener noreferrer">Twitter</a></li>
+                <li class="header-social-list__item"><a class="header-social-list__link link" href="#" target="_blank"
+                        rel="noopener noreferrer">Facebook</a></li>
+                <li class="header-social-list__item"><a class="header-social-list__link link" href="#" target="_blank"
+                        rel="noopener noreferrer">Linkedin</a></li>
             </ul>
         </div>
     </header>
@@ -85,8 +130,8 @@
                             <img class="portfolio-list__img" src="./images/portfolio/Technocrack.jpg"
                                 width="450" alt="Strona internetowa wyświetlona na laptopie">
                         </picture> -->
-                        <img class="portfolio-list__img" src="./images/portfolio/Technocrack.jpg" width="370" height="294"
-                            alt="Strona internetowa wyświetlona na laptopie">
+                        <img class="portfolio-list__img" src="./images/portfolio/Technocrack.jpg" width="370"
+                            height="294" alt="Strona internetowa wyświetlona na laptopie">
                         <div class="portfolio-list__overlay">
                             <p class="portfolio-list__overlay-text">
                                 Technocrack jest popularną platformą wykorzystywaną do
@@ -299,6 +344,8 @@
         </div>
     </footer>
 
+    <!-- Skrypt Java Script - Mobile menu -->
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

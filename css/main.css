@@ -371,7 +371,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
-  width: 528px;
+  width: calc(100% - 30px);
   min-height: 581px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -487,8 +487,6 @@ img {
 
 .modal-form__policy-text {
   margin: 20px auto 30px;
-  font-size: 14px;
-  line-height: 1.714;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -521,6 +519,26 @@ img {
   margin: 0 auto;
   padding: 10px 76px;
   border: 1px solid #2196f3;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+  .modal-form__policy-text {
+    font-size: 12px;
+    line-height: 1.667;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+  .modal-form__policy-text {
+    font-size: 14px;
+    line-height: 1.714;
+  }
 }
 
 .social-list {

@@ -257,6 +257,12 @@ img {
   }
 }
 
+@media screen and (max-width: 1199.9px) {
+  .logo {
+    margin: auto;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .logo {
     margin-right: 93px;
@@ -974,7 +980,7 @@ img {
 }
 
 .footer__container {
-  padding: 60px 0;
+  padding: 60px 15px;
   cursor: pointer;
 }
 
@@ -1073,7 +1079,7 @@ img {
     margin-right: 144px;
   }
   .newsletter__email {
-    width: 450px;
+    max-width: 450px;
   }
 }
 
@@ -1156,6 +1162,13 @@ img {
 
 .portfolio-list__item:nth-child(n + 7) {
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-list__item {
+    flex-basis: calc((100% - 30px * 2) / 2);
+    margin: 15px;
+  }
 }
 
 .portfolio-list__overlay {
